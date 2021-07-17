@@ -1,0 +1,133 @@
+sudo yum update kernel
+exit
+sudo yum -y groupinstall "development tools"
+sudo yum -y install epel-release wget
+sudo wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+sudo rpm -Uvh remi-release7.rpm
+sudo rpm -Uvh remi-release-7.rpm
+sudo yum -y install --enablerepo=remi-php72 php php-pdo php-mysqlnd php-mbstring php-xml php-fpm php-common php-devel php-mysql unzip
+php -v
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+sudo mv composer.phar /usr/local/bin/composer
+composer -v
+exit
+ls /
+ls /usr
+pwd
+cd /vagrant
+pwd
+cd /vagrant
+mkdir server_lesson && cd server_lesson
+git init
+touch first.txt
+cd /vagrant
+mkdir server_lesson/linux_practice/public
+mkdir -p server_lesson/linux_practice/public
+ls server_lesson server_lesson/linux_practice
+cd vagrant
+cd /vagrant
+touch server_lesson/linux_practice/public/index.php
+ls server_lesson/linux_practice/public
+cd /vagrant/server_lesson && ls
+cd /vagrant/server_lesson/linux_practice/public
+cp index.php index_bk.php
+ls
+cd /vagrant/server_lesson/linux_practice
+cp -r public tmp
+ls ./ public tmp
+cd /vagrant
+mv server_lesson/linux_practice server_lesson/linux_practice1
+mkdir linux_practice2 linux_practice3
+mv ./linux_practice ./server_lesson
+mv ./linux_practice2 ./server_lesson
+cd /vagrant/server_lesson/linux_practice1/tmp/
+rm *_bk.php
+ls
+cd /vagrant
+rm server_lesson/first.txt
+rm -r linux_practice3
+ls server_lesson
+git add
+git add server_lesson
+git add /vagrant/server_lesson
+git status
+cd /vagrant
+cd server_lesson
+git status
+git add .
+git status
+git commit -m 'Linux課題１ linux_practice3の削除'
+git remote add origin https://github.com/08kobe24mn/server_lesson.git
+git remote -v
+git push origin master
+git push -u origin master
+git push origin master
+git add .
+git commit -m 'gitの確認のため再送'
+cd /vagrant/server_lesson
+echo '# サーバレッスン' > README.md
+echo 'Linuxプラクティス' > README.md
+echo '----------------' >> README.md
+cat README.md
+echo '# サーバレッスン' > README.md
+echo 'Linuxプラクティス' >> README.md
+echo '----------------' >> README.md
+cat README.md
+exit
+cd /vagtant/server_lesson
+cd /vagrant/server_lesson
+vi README.md
+cat README.md
+git add .
+git commit -m "Linuxコマンドをvi
+を使って箇条書き"
+git push
+git push origin master
+git push
+exit
+cd /vagrant/server_lesson
+cd linux_practice2
+mkdir documents
+cd documents
+touch gizumo{01..50}.md
+ls documents
+ls
+git add .
+git commit -m "gizumo01.mdからgizumo50.mdまでの50個のファイルを作成"
+git push
+cd ..
+mkdir trash
+mv gizumo2*.md /vagrant/server_lesson/linux_practice2/trash
+mv gizumo2?.md /vagrant/server_lesson/linux_practice2/trash
+cd documents
+mv gizumo2?.md /vagrant/server_lesson/linux_practice2/trash
+mv gizumo3?.md /vagrant/server_lesson/linux_practice2/trash
+mv gizumo40.md /vagrant/server_lesson/linux_practice2/trash
+git add .
+git status
+git add
+cd ..
+git add .
+git commit -m "gizumo20.mdからgizumo40.mdまでをtrashに移動"
+git push origin master
+touch .gitgnore
+git add .
+git commit -m ".gitgnoreファイルの作成"
+vi .gitgnore
+git add .
+git commit -m ".gitgnoreにgizumo20.md ~ gizumo29.mdまでのファイルを管理対象から外すことを記述"
+git status
+git add -A
+git commit -m "documentsからtrashへ移動"
+git status
+history 300
+touch exex_command.log
+history 300
+history 300 -w exec_command.log
+history -w exec_command.log
+history -w exec_command.log 300
+history -w exec_command2.log 300
+rm *.log
+history -w exec_command.log 300
