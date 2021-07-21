@@ -9,7 +9,7 @@ Linuxプラクティス
 - cp(CoPy)
 - mv(MoVe)
 - rm(ReMove)
-- *
+- \*
 - ?
 - \>
 - \>\>
