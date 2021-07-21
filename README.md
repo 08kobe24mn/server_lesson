@@ -11,7 +11,7 @@ Linuxプラクティス
 - rm(ReMove)
 - *
 - ?
-- >
-- >>
+- \>
+- \>\>
 - cat(CATnate)
 - vi
